@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css"
   ],
-  "SelectedNode": "\\C:\\Users\\Adel\\Source\\Repos\\contrato-landing",
+  "SelectedNode": "\\assets\\css\\app.css",
   "PreviewInSolutionExplorer": false
 }

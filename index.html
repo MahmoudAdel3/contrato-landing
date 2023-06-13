@@ -39,6 +39,12 @@
             width: 200px;
             font-weight: 600;
         }
+        .steps .step-item .step-details {
+            margin-top: 2rem;
+            margin-left: 0.3em;
+            margin-right: 0.3em;
+            padding-top: 0.2em;
+        }
     </style>
 </head>
 
@@ -263,8 +269,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -297,8 +301,8 @@
                             <div class="signup-block">
                                 <form>
                                     <div class="control">
-                                        <input type="email" class="input" placeholder="Your mobile">
-                                        <button type="submit" class="button btn-align primary-btn raised">
+                                        <input type="text" class="input" placeholder="Your mobile">
+                                        <button type="button" data-modal="basic-large-modal" class="button btn-align primary-btn raised modal-trigger">
                                             BOOK YOUR CONSULTATION
                                         </button>
                                     </div>
@@ -500,7 +504,7 @@
                         </div>
                         <div class="column"></div>
                     </div>
-                   </div>
+                </div>
             </div>
         </div>
     </section>
@@ -525,8 +529,8 @@
                         <div class="signup-block">
                             <form>
                                 <div class="control">
-                                    <input type="email" class="input" placeholder="Your mobile" />
-                                    <button type="submit" class="button btn-align primary-btn raised">
+                                    <input type="text" class="input" placeholder="Your mobile" />
+                                    <button type="button" class="button btn-align primary-btn raised modal-trigger" data-modal="basic-large-modal">
                                         BOOK YOUR CONSULTATION
                                     </button>
                                 </div>
@@ -547,9 +551,236 @@
 
         </div>
     </div>
+    <!-- Modal Markup -->
+    <div id="basic-large-modal" class="modal modal-lg" style="background: rgba(0, 0, 0, 0.6) ">
+        <!--<div class="modal-background"></div>-->
+        <div class="modal-content">
+            <div class="flex-card simple-shadow">
+                <div class="card-body">
+                    <div class="columns mt-20">
+                        <div class="column is-12">
+                            <!-- Wrapper -->
+                            <div class="steps-wrapper">
+                                <!-- Steps Indicators -->
+                                <div class="steps" id="stepsDemo3">
+                                    <!-- Indicator -->
+                                    <div class="step-item" data-step-id="0">
+                                        <div class="step-marker">1</div>
+                                        <div class="step-details">
+                                            <p class="step-title">Service</p>
+                                        </div>
+                                    </div>
+                                    <!-- Indicator -->
+                                    <div class="step-item" data-step-id="1">
+                                        <div class="step-marker">2</div>
+                                        <div class="step-details">
+                                            <p class="step-title">Lawyer</p>
 
+                                        </div>
+                                    </div>
+                                    <!-- Indicator -->
+                                    <div class="step-item" data-step-id="2">
+                                        <div class="step-marker">3</div>
+                                        <div class="step-details">
+                                            <p class="step-title">Date</p>
+                                        </div>
+                                    </div>
+                                    <!-- Indicator -->
+                                    <div class="step-item" data-step-id="3">
+                                        <div class="step-marker">4</div>
+                                        <div class="step-details">
+                                            <p class="step-title">Inquiry</p>
+                                        </div>
+                                    </div>
+                                    <!-- Indicator -->
+                                    <div class="step-item" data-step-id="4">
+                                        <div class="step-marker">5</div>
+                                        <div class="step-details">
+                                            <p class="step-title">Payment</p>
+                                        </div>
+                                    </div>
+                                    <!-- Steps content wrapper -->
+                                    <div class="steps-content">
+                                        <!-- Step content -->
+                                        <div class="step-content has-text-centered animated preFadeInUp fadeInUp" style="margin-top: 40px">
+                                            <span class="tag squared is-large" onClick=selectService(this)>Corporate Law</span>
+                                            <span class="tag squared is-large" onClick=selectService(this)>Inheritance</span>
+                                            <span class="tag squared is-large" onClick=selectService(this)>Custody</span>
+                                            <span class="tag squared is-large" onClick=selectService(this)>Contract Drafting</span>
+                                            <span class="tag squared is-large" onClick=selectService(this)>Contract Review</span>
+                                            <span class="tag squared is-large" onClick=selectService(this)>Legal Negotiation</span>
+                                            <span class="tag squared is-large" onClick=selectService(this)>Legal Representation</span>
+                                        </div>
+                                        <!-- Step content -->
+                                        <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                            <div class="content-wrapper pb-6">
+                                                <div class="team-members-wrap">
+                                                    <div class="columns is-multiline is-flex-portrait">
+                                                        <!--Speaker-->
+                                                        <div class="column is-4">
+                                                            <div class="rounded-team-member">
+                                                                <div class="avatar-wrap">
+                                                                    <img class="avatar" src="assets/img/qcShlLKrRHtDoUFTyiHSkYxGYabIwkiB.png">
+                                                                </div>
+                                                                <h3>Ali Ghannam</h3>
+                                                                <p>9 years of Experience</p>
+                                                                <p>Fees for 30mins: EGP 1,500</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Speaker-->
+                                                        <div class="column is-4">
+                                                            <div class="rounded-team-member">
+                                                                <div class="avatar-wrap">
+                                                                    <img class="avatar" src="assets/img/7j8AokKcWqB0b7OGr16Ovgva6fCFCGII.png" alt="">
+                                                                </div>
+                                                                <h3>Amro Yasser</h3>
+                                                                <p>4 years of Experience</p>
+                                                                <p>Fees for 30mins: EGP 700</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Speaker-->
+                                                        <div class="column is-4">
+                                                            <div class="rounded-team-member">
+                                                                <div class="avatar-wrap">
+                                                                    <img class="avatar" src="assets/img/qcShlLKrRHtDoUFTyiHSkYxGYabIwkiB.png" alt="">
+                                                                </div>
+                                                                <h3>Ali Ghannam</h3>
+                                                                <p>9 years of Experience</p>
+                                                                <p>Fees for 30mins: EGP 1,500</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Step content -->
+                                        <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                            <!-- Field -->
+                                            <div class="field">
+                                                <div class="field-label is-normal">
+                                                    <label class="label">Facebook account</label>
+                                                </div>
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <div class="control datepicker-control has-icons-right">
+                                                            <input data-toggle="datepicker" type="text" class="input is-medium" placeholder="select a date ...">
+                                                            <span class="icon is-right">
+                                                                <i class="im im-icon-Calendar-4"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Step content -->
+                                        <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                            <div class="columns">
+                                                <!-- Column -->
+                                                <div class="column is-6">
+                                                    <!-- Field -->
+                                                    <div class="field">
+                                                        <!--<div class="field-label is-normal">
+                                                            <label class="label">Your Name</label>
+                                                        </div>-->
+                                                        <div class="field-body">
+                                                            <div class="field">
+                                                                <div class="control">
+                                                                    <input class="input" name="username4" type="text" placeholder="Your Name" autofocus="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Column -->
+                                                <div class="column is-6">
+                                                    <!-- Field -->
+                                                    <div class="field">
+                                                        <!--<div class="field-label is-normal">
+                                                            <label class="label">Your Email</label>
+                                                        </div>-->
+                                                        <div class="field-body">
+                                                            <div class="field">
+                                                                <div class="control">
+                                                                    <input class="input" name="company" type="email" placeholder="Your Email">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- Field -->
+                                            <div class="field">
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <div class="control">
+                                                            <textarea class="textarea" name="inquiry" type="text" placeholder="Your Inquiry"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Step content -->
+                                        <div class="step-content has-text-centered animated preFadeInUp fadeInUp">
+                                            <h1 class="title is-5">Under processing</h1>
+
+                                        </div>
+                                    </div>
+                                    <!-- Steps Navigation -->
+                                    <div class="steps-actions">
+                                        <div class="steps-action">
+                                            <a href="#" data-nav="previous" class="button button-cta is-bold is-light btn-align">Back</a>
+                                            <a href="#" data-nav="next" class="button secondary-btn button-cta is-bold raised btn-align ">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large is-hidden" aria-label="close"></button>
+    </div>
+    <script>
+        function beforeNext(cntx) {
+        }
+        function onShow(cntx) {
+            if (cntx != 4) {
+                $('[data-nav="next"]').text('Next');
+            }
+        }
+        function onFinish(cntx) {
+            $('[data-nav="next"]').text('Submit');
+        }
+    </script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/core.js"></script>
+    <script>
+        function selectService(elem) {
+            $('.is-secondary').removeClass('is-secondary')
+            $(elem).addClass('is-secondary');
+        }
+        $(".modal-trigger").on('click', function () {
+            $("#basic-large-modal").trigger("classChanged");
+        });
+        $('#basic-large-modal').on('classChanged', function () {
+            //$('.steps-actions').hide();
+            const elements = document.querySelectorAll('.is-active, .is-completed');
+            elements.forEach(elm => {
+                elm.classList.remove('is-active', 'is-completed');
+            });
+            $('[data-step-id="0"]').addClass('is-active');
+            $('.steps-content').children().first().addClass('is-active');
+        });
+        $(function () {
+            $('[data-toggle="datepicker"]').datepicker({
+                autoShow: true,
+                inline: true
+            });
+        })
+    </script>
 </body>
-
 </html>
